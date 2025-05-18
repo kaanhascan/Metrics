@@ -21,7 +21,7 @@ function readResultsFile() {
         return { api1: [], api2: [] };
       }
       const parsedData = JSON.parse(data);
-      // Ensure both api1 and api2 arrays exist
+      
       return {
         api1: Array.isArray(parsedData.api1) ? parsedData.api1 : [],
         api2: Array.isArray(parsedData.api2) ? parsedData.api2 : []
@@ -35,7 +35,7 @@ function readResultsFile() {
 }
 
 function writeResultsFile(data) {
-  // Ensure data structure is correct before writing
+
   const safeData = {
     api1: Array.isArray(data.api1) ? data.api1 : [],
     api2: Array.isArray(data.api2) ? data.api2 : []
@@ -43,9 +43,29 @@ function writeResultsFile(data) {
   fs.writeFileSync('results.json', JSON.stringify(safeData, null, 2));
 }
 
-function getSystemMetrics() {
+// CPU kullanımını hesaplamak için yardımcı fonksiyon
+function getCpuUsage() {
+  const cpus = os.cpus();
+  let totalIdle = 0;
+  let totalTick = 0;
+
+  for (const cpu of cpus) {
+    for (const type in cpu.times) {
+      totalTick += cpu.times[type];
+    }
+    totalIdle += cpu.times.idle;
+  }
+
   return {
-    cpuUsage: process.cpuUsage(),
+    idle: totalIdle / cpus.length,
+    total: totalTick / cpus.length
+  };
+}
+
+function getSystemMetrics() {
+  const cpuUsage = getCpuUsage();
+  return {
+    cpuUsage,
     memoryUsage: process.memoryUsage(),
     freeMemory: os.freemem(),
     totalMemory: os.totalmem(),
@@ -72,12 +92,20 @@ function calculateMetrics(data, apiKey) {
       avgResponseTime: 0,
       totalRequests: 0,
       timestamps: [],
-      responseTimes: []
+      responseTimes: [],
+      systemMetrics: {
+        cpuUsage: 0,
+        memoryUsageMB: 0
+      }
     };
   }
 
   const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
   const recentData = data[apiKey].filter(item => new Date(item.timestamp) > oneHourAgo);
+  const latestData = data[apiKey][data[apiKey].length - 1];
+
+  // Get only the last 100 data points for response time trend
+  const trendData = data[apiKey].slice(-100);
 
   const totalRequests = recentData.length;
   const successfulRequests = recentData.filter(item => item.status >= 200 && item.status < 400).length;
@@ -92,14 +120,17 @@ function calculateMetrics(data, apiKey) {
     successRate,
     avgResponseTime,
     totalRequests,
-    timestamps: recentData.map(item => item.timestamp),
-    responseTimes: responseTimes
+    timestamps: trendData.map(item => item.timestamp),
+    responseTimes: trendData.map(item => item.responseTimeMs || 0),
+    systemMetrics: latestData.systemMetrics || {
+      cpuUsage: 0,
+      memoryUsageMB: 0
+    }
   };
 }
 
 async function makeApiRequests() {
   const currentResults = { api1: [], api2: [] };
-  const systemMetrics = getSystemMetrics();
 
   for (const apiKey of ['api1', 'api2']) {
     const api = apiConfig[apiKey];
@@ -110,6 +141,8 @@ async function makeApiRequests() {
       let response;
       let status = 0;
 
+      // Get system metrics before the request
+      const beforeMetrics = getSystemMetrics();
 
       const headers = {};
       if (api.url.includes('localhost:8080')) {
@@ -125,8 +158,17 @@ async function makeApiRequests() {
         }
         throw err;
       }
+
+      // Get system metrics after the request
+      const afterMetrics = getSystemMetrics();
       const end = Date.now();
       const duration = end - start;
+
+      // Calculate CPU usage percentage
+      const cpuUsagePercent = ((afterMetrics.cpuUsage.total - afterMetrics.cpuUsage.idle) / afterMetrics.cpuUsage.total) * 100;
+      
+      // Calculate memory usage
+      const memoryUsage = afterMetrics.memoryUsage.rss - beforeMetrics.memoryUsage.rss;
 
       const contentLength = response.headers['content-length'];
       const responseSize = response.data ? JSON.stringify(response.data).length : 0;
@@ -142,13 +184,17 @@ async function makeApiRequests() {
         status: status,
         timestamp: new Date().toISOString(),
         systemMetrics: {
-          cpuUsage: systemMetrics.cpuUsage.user / 1000,
-          memoryUsageMB: Math.round(systemMetrics.memoryUsage.rss / 1024 / 1024),
-          freeMemoryPercent: Math.round((systemMetrics.freeMemory / systemMetrics.totalMemory) * 100)
+          cpuUsage: cpuUsagePercent.toFixed(2), // CPU kullanım yüzdesi
+          memoryUsageMB: Math.round(memoryUsage / 1024 / 1024), // MB cinsinden bellek kullanımı
+          freeMemoryPercent: Math.round((afterMetrics.freeMemory / afterMetrics.totalMemory) * 100)
         }
       });
     } catch (err) {
       console.error(`Error fetching ${api.url}:`, err.message);
+      // Get system metrics at the time of error
+      const errorMetrics = getSystemMetrics();
+      const cpuUsagePercent = ((errorMetrics.cpuUsage.total - errorMetrics.cpuUsage.idle) / errorMetrics.cpuUsage.total) * 100;
+      
       currentResults[apiKey].push({
         name: api.name,
         url: api.url,
@@ -156,9 +202,9 @@ async function makeApiRequests() {
         status: err.response ? err.response.status : 0,
         timestamp: new Date().toISOString(),
         systemMetrics: {
-          cpuUsage: systemMetrics.cpuUsage.user / 1000,
-          memoryUsageMB: Math.round(systemMetrics.memoryUsage.rss / 1024 / 1024),
-          freeMemoryPercent: Math.round((systemMetrics.freeMemory / systemMetrics.totalMemory) * 100)
+          cpuUsage: cpuUsagePercent.toFixed(2),
+          memoryUsageMB: Math.round(errorMetrics.memoryUsage.rss / 1024 / 1024),
+          freeMemoryPercent: Math.round((errorMetrics.freeMemory / errorMetrics.totalMemory) * 100)
         }
       });
     }
@@ -182,14 +228,23 @@ app.post('/config', (req, res) => {
   try {
     const { api1, api2 } = req.body;
     
-    if (!api1 || !api2 || !api1.url || !api2.url) {
+    if (!api1 || !api1.url) {
       return res.status(400).json({ 
         success: false, 
-        error: 'Both APIs must have a name and URL' 
+        error: 'API 1 must have a name and URL' 
       });
     }
 
-    apiConfig = { api1, api2 };
+    // If api2 is not configured, set it to empty
+    if (!api2 || !api2.url) {
+      apiConfig = { 
+        api1, 
+        api2: { name: '', url: '' } 
+      };
+    } else {
+      apiConfig = { api1, api2 };
+    }
+
     res.json({ success: true });
   } catch (error) {
     console.error('Error saving configuration:', error);
@@ -205,16 +260,23 @@ app.get('/results', async (req, res) => {
     const allResults = readResultsFile();
     
     const api1Metrics = calculateMetrics(allResults, 'api1');
-    const api2Metrics = calculateMetrics(allResults, 'api2');
+    let api2Metrics = null;
+    let combinedMetrics = null;
 
-    const combinedMetrics = {
-      timestamps: [...new Set([
-        ...api1Metrics.timestamps,
-        ...api2Metrics.timestamps
-      ])].sort(),
-      api1ResponseTimes: api1Metrics.responseTimes,
-      api2ResponseTimes: api2Metrics.responseTimes
-    };
+    // Only calculate API2 metrics if it's configured
+    if (apiConfig.api2.url) {
+      api2Metrics = calculateMetrics(allResults, 'api2');
+      
+      // Only include combined metrics if both APIs are configured
+      combinedMetrics = {
+        timestamps: [...new Set([
+          ...api1Metrics.timestamps,
+          ...api2Metrics.timestamps
+        ])].sort(),
+        api1ResponseTimes: api1Metrics.responseTimes,
+        api2ResponseTimes: api2Metrics.responseTimes
+      };
+    }
 
     res.json({
       api1Metrics,
@@ -233,7 +295,7 @@ app.get('/health', (req, res) => {
     status: 'UP',
     timestamp: new Date().toISOString(),
     metrics: {
-      cpuUsage: `${(systemMetrics.cpuUsage.user / 1000).toFixed(2)} ms`,
+      cpuUsage: `${(systemMetrics.cpuUsage.total / 1000).toFixed(2)} ms`,
       memoryUsageMB: `${Math.round(systemMetrics.memoryUsage.rss / 1024 / 1024)} MB`,
       freeMemoryPercent: `${Math.round((systemMetrics.freeMemory / systemMetrics.totalMemory) * 100)}%`,
       uptime: `${Math.round(systemMetrics.uptime)} seconds`

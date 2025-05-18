@@ -11,8 +11,8 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 20px;
-      background-color: #f7f9fc;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
     }
     .dashboard-container {
       max-width: 1400px;
@@ -23,22 +23,22 @@
       margin-bottom: 30px;
     }
     .header h1 {
-      color: #2c3e50;
+      color: #ffffff;
       margin-bottom: 10px;
     }
     .header p {
-      color: #7f8c8d;
+      color: #b0b0b0;
       margin: 0;
     }
     .api-config {
-      background-color: white;
+      background-color: #2d2d2d;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     .api-config h2 {
-      color: #2c3e50;
+      color: #ffffff;
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 20px;
@@ -54,14 +54,16 @@
     .api-input-group label {
       display: block;
       margin-bottom: 5px;
-      color: #7f8c8d;
+      color: #b0b0b0;
     }
     .api-input-group input {
       width: 100%;
       padding: 8px;
-      border: 1px solid #ddd;
+      border: 1px solid #404040;
       border-radius: 4px;
       font-size: 14px;
+      background-color: #333333;
+      color: #ffffff;
     }
     .api-sections-container {
       display: flex;
@@ -70,18 +72,18 @@
     }
     .api-section {
       flex: 1;
-      background-color: white;
+      background-color: #2d2d2d;
       border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     .api-section h2 {
-      color: #2c3e50;
+      color: #ffffff;
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 20px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #ecf0f1;
+      border-bottom: 1px solid #404040;
     }
     .metrics-panel {
       display: flex;
@@ -90,12 +92,12 @@
       margin-bottom: 30px;
     }
     .metric-card {
-      background-color: white;
+      background-color: #333333;
       border-radius: 10px;
       padding: 20px;
       flex: 1;
       min-width: 200px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -103,7 +105,7 @@
     }
     .metric-card h3 {
       margin: 0;
-      color: #7f8c8d;
+      color: #b0b0b0;
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -112,26 +114,26 @@
       font-size: 28px;
       font-weight: bold;
       margin: 10px 0;
-      color: #2c3e50;
+      color: #ffffff;
     }
     .metric-card .change {
       font-size: 12px;
-      color: #7f8c8d;
+      color: #b0b0b0;
     }
     .chart-container {
-      background-color: white;
+      background-color: #2d2d2d;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     .chart-container h2 {
-      color: #2c3e50;
+      color: #ffffff;
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 20px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #ecf0f1;
+      border-bottom: 1px solid #404040;
     }
     .chart-wrapper {
       position: relative;
@@ -164,25 +166,43 @@
       font-size: 14px;
       margin-bottom: 20px;
       transition: background-color 0.3s;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      display: inline-block;
+      margin-right: 10px;
     }
     .refresh-button:hover {
       background-color: #2980b9;
     }
+    .reset-button {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+    .reset-button:hover {
+      background-color: #c0392b;
+    }
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
     .last-update {
       text-align: center;
-      color: #7f8c8d;
+      color: #b0b0b0;
       font-size: 12px;
       margin-top: 10px;
     }
     .error-message {
-      color: #e74c3c;
+      color: #ff6b6b;
       text-align: center;
       margin: 20px 0;
       padding: 10px;
-      background-color: #fadbd8;
+      background-color: #2d2d2d;
       border-radius: 5px;
       display: none;
     }
@@ -200,19 +220,19 @@
       background-color: #27ae60;
     }
     .combined-metrics {
-      background-color: white;
+      background-color: #2d2d2d;
       border-radius: 10px;
       padding: 20px;
       margin-top: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
     .combined-metrics h2 {
-      color: #2c3e50;
+      color: #ffffff;
       font-size: 18px;
       margin-top: 0;
       margin-bottom: 20px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #ecf0f1;
+      border-bottom: 1px solid #404040;
     }
     .combined-charts {
       display: flex;
@@ -255,7 +275,10 @@
       <button id="save-config" class="save-config-button">Save Configuration</button>
     </div>
     
-    <button id="refresh" class="refresh-button">Refresh Data</button>
+    <div class="button-container">
+      <button id="refresh" class="refresh-button">Refresh Data</button>
+      <button id="reset" class="reset-button">Reset Metrics</button>
+    </div>
     <div id="error-message" class="error-message"></div>
 
     <div class="api-sections-container">
@@ -276,6 +299,16 @@
             <h3>Total Requests</h3>
             <div class="value" id="api1-total-requests">--</div>
             <div class="change">Last hour</div>
+          </div>
+          <div class="metric-card">
+            <h3>CPU Usage</h3>
+            <div class="value" id="api1-cpu-usage">--%</div>
+            <div class="change">Last request</div>
+          </div>
+          <div class="metric-card">
+            <h3>Memory Usage</h3>
+            <div class="value" id="api1-memory-usage">-- MB</div>
+            <div class="change">Last request</div>
           </div>
         </div>
         <div class="chart-container">
@@ -303,6 +336,16 @@
             <h3>Total Requests</h3>
             <div class="value" id="api2-total-requests">--</div>
             <div class="change">Last hour</div>
+          </div>
+          <div class="metric-card">
+            <h3>CPU Usage</h3>
+            <div class="value" id="api2-cpu-usage">--%</div>
+            <div class="change">Last request</div>
+          </div>
+          <div class="metric-card">
+            <h3>Memory Usage</h3>
+            <div class="value" id="api2-memory-usage">-- MB</div>
+            <div class="change">Last request</div>
           </div>
         </div>
         <div class="chart-container">
@@ -493,14 +536,24 @@
     }
 
     function updateApiNames(api1Name, api2Name) {
-
       document.getElementById('api1-title').textContent = `${api1Name} Metrics`;
       document.getElementById('api2-title').textContent = `${api2Name} Metrics`;
       
-
       document.getElementById('api1-chart-title').textContent = `${api1Name} Response Time Trend`;
       document.getElementById('api2-chart-title').textContent = `${api2Name} Response Time Trend`;
       
+      
+      const api2Section = document.getElementById('api2-section');
+      const combinedMetrics = document.querySelector('.combined-metrics');
+      if (!api2Name) {
+        api2Section.style.display = 'none';
+        combinedMetrics.style.display = 'none';
+        document.getElementById('api1-section').style.flex = '1';
+      } else {
+        api2Section.style.display = 'block';
+        combinedMetrics.style.display = 'block';
+        document.getElementById('api1-section').style.flex = '1';
+      }
 
       combinedResponseTimeChart.data.datasets[0].label = api1Name;
       combinedResponseTimeChart.data.datasets[1].label = api2Name;
@@ -518,12 +571,15 @@
     function updateApiMetrics(apiNumber, data) {
       const prefix = `api${apiNumber}`;
       
-      
       document.getElementById(`${prefix}-success-rate`).textContent = `${data.successRate}%`;
       document.getElementById(`${prefix}-avg-response`).textContent = `${data.avgResponseTime} ms`;
       document.getElementById(`${prefix}-total-requests`).textContent = data.totalRequests;
-
       
+      if (data.systemMetrics) {
+        document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
+        document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
+      }
+
       const chart = apiNumber === 1 ? api1ResponseTimeChart : api2ResponseTimeChart;
       chart.data.labels = data.timestamps.map(formatTimestamp);
       chart.data.datasets[0].data = data.responseTimes;
@@ -552,32 +608,35 @@
         
         const data = await response.json();
         
-      
         updateApiMetrics(1, {
           successRate: data.api1Metrics.successRate,
           avgResponseTime: data.api1Metrics.avgResponseTime,
           totalRequests: data.api1Metrics.totalRequests,
           timestamps: data.api1Metrics.timestamps,
-          responseTimes: data.api1Metrics.responseTimes
+          responseTimes: data.api1Metrics.responseTimes,
+          systemMetrics: data.api1Metrics.systemMetrics
         });
 
-        
-        updateApiMetrics(2, {
-          successRate: data.api2Metrics.successRate,
-          avgResponseTime: data.api2Metrics.avgResponseTime,
-          totalRequests: data.api2Metrics.totalRequests,
-          timestamps: data.api2Metrics.timestamps,
-          responseTimes: data.api2Metrics.responseTimes
-        });
+        if (data.api2Metrics) {
+          updateApiMetrics(2, {
+            successRate: data.api2Metrics.successRate,
+            avgResponseTime: data.api2Metrics.avgResponseTime,
+            totalRequests: data.api2Metrics.totalRequests,
+            timestamps: data.api2Metrics.timestamps,
+            responseTimes: data.api2Metrics.responseTimes,
+            systemMetrics: data.api2Metrics.systemMetrics
+          });
+        }
 
-        
-        updateCombinedCharts({
-          timestamps: data.combinedMetrics.timestamps,
-          api1ResponseTimes: data.combinedMetrics.api1ResponseTimes,
-          api2ResponseTimes: data.combinedMetrics.api2ResponseTimes,
-          api1SuccessRate: data.api1Metrics.successRate,
-          api2SuccessRate: data.api2Metrics.successRate
-        });
+        if (data.combinedMetrics) {
+          updateCombinedCharts({
+            timestamps: data.combinedMetrics.timestamps,
+            api1ResponseTimes: data.combinedMetrics.api1ResponseTimes,
+            api2ResponseTimes: data.combinedMetrics.api2ResponseTimes,
+            api1SuccessRate: data.api1Metrics.successRate,
+            api2SuccessRate: data.api2Metrics ? data.api2Metrics.successRate : 0
+          });
+        }
         
         document.getElementById('last-update-time').textContent = new Date().toLocaleTimeString();
         document.getElementById('error-message').style.display = 'none';
@@ -593,6 +652,11 @@
       const api1Url = document.getElementById('api1-url').value;
       const api2Name = document.getElementById('api2-name').value;
       const api2Url = document.getElementById('api2-url').value;
+
+      if (!api1Name || !api1Url) {
+        alert('At least API 1 must be configured');
+        return;
+      }
 
       fetch('/config', {
         method: 'POST',
@@ -626,9 +690,50 @@
       
       document.getElementById('refresh').addEventListener('click', fetchData);
       document.getElementById('save-config').addEventListener('click', saveConfiguration);
+      document.getElementById('reset').addEventListener('click', resetMetrics);
       
       setInterval(fetchData, 5000);
     });
+
+    async function resetMetrics() {
+      if (!confirm('Are you sure you want to reset all displayed metrics?')) {
+        return;
+      }
+
+      document.getElementById('api1-success-rate').textContent = '--%';
+      document.getElementById('api1-avg-response').textContent = '-- ms';
+      document.getElementById('api1-total-requests').textContent = '--';
+      document.getElementById('api1-cpu-usage').textContent = '--%';
+      document.getElementById('api1-memory-usage').textContent = '-- MB';
+
+      document.getElementById('api2-success-rate').textContent = '--%';
+      document.getElementById('api2-avg-response').textContent = '-- ms';
+      document.getElementById('api2-total-requests').textContent = '--';
+      document.getElementById('api2-cpu-usage').textContent = '--%';
+      document.getElementById('api2-memory-usage').textContent = '-- MB';
+
+
+      api1ResponseTimeChart.data.labels = [];
+      api1ResponseTimeChart.data.datasets[0].data = [];
+      api1ResponseTimeChart.update();
+
+      api2ResponseTimeChart.data.labels = [];
+      api2ResponseTimeChart.data.datasets[0].data = [];
+      api2ResponseTimeChart.update();
+
+      combinedResponseTimeChart.data.labels = [];
+      combinedResponseTimeChart.data.datasets[0].data = [];
+      combinedResponseTimeChart.data.datasets[1].data = [];
+      combinedResponseTimeChart.update();
+
+      combinedSuccessRateChart.data.datasets[0].data = [0, 0];
+      combinedSuccessRateChart.update();
+
+      document.getElementById('last-update-time').textContent = '--';
+      document.getElementById('error-message').style.display = 'none';
+
+      setTimeout(fetchData, 1000);
+    }
   </script>
 </body>
 </html>
