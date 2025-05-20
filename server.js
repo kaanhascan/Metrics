@@ -43,7 +43,7 @@ function writeResultsFile(data) {
   fs.writeFileSync('results.json', JSON.stringify(safeData, null, 2));
 }
 
-// CPU kullanımını hesaplamak için yardımcı fonksiyon
+
 function getCpuUsage() {
   const cpus = os.cpus();
   let totalIdle = 0;
@@ -95,7 +95,8 @@ function calculateMetrics(data, apiKey) {
       responseTimes: [],
       systemMetrics: {
         cpuUsage: 0,
-        memoryUsageMB: 0
+        memoryUsageMB: 0,
+        sizeKB: 0
       }
     };
   }
@@ -104,7 +105,7 @@ function calculateMetrics(data, apiKey) {
   const recentData = data[apiKey].filter(item => new Date(item.timestamp) > oneHourAgo);
   const latestData = data[apiKey][data[apiKey].length - 1];
 
-  // Get only the last 100 data points for response time trend
+
   const trendData = data[apiKey].slice(-100);
 
   const totalRequests = recentData.length;
@@ -122,9 +123,9 @@ function calculateMetrics(data, apiKey) {
     totalRequests,
     timestamps: trendData.map(item => item.timestamp),
     responseTimes: trendData.map(item => item.responseTimeMs || 0),
-    systemMetrics: latestData.systemMetrics || {
-      cpuUsage: 0,
-      memoryUsageMB: 0
+    systemMetrics: {
+      ...latestData.systemMetrics,
+      sizeKB: latestData.sizeKB || 0
     }
   };
 }
@@ -141,7 +142,6 @@ async function makeApiRequests() {
       let response;
       let status = 0;
 
-      // Get system metrics before the request
       const beforeMetrics = getSystemMetrics();
 
       const headers = {};
@@ -159,39 +159,51 @@ async function makeApiRequests() {
         throw err;
       }
 
-      // Get system metrics after the request
+ 
       const afterMetrics = getSystemMetrics();
       const end = Date.now();
       const duration = end - start;
 
-      // Calculate CPU usage percentage
-      const cpuUsagePercent = ((afterMetrics.cpuUsage.total - afterMetrics.cpuUsage.idle) / afterMetrics.cpuUsage.total) * 100;
-      
-      // Calculate memory usage
-      const memoryUsage = afterMetrics.memoryUsage.rss - beforeMetrics.memoryUsage.rss;
 
-      const contentLength = response.headers['content-length'];
-      const responseSize = response.data ? JSON.stringify(response.data).length : 0;
-      const sizeKB = contentLength ? 
-          (parseInt(contentLength, 10) / 1024).toFixed(2) : 
-          (responseSize / 1024).toFixed(2);
+      let metrics = {
+        cpuUsage: 0,
+        memoryUsageMB: 0,
+        sizeKB: 0
+      };
+
+      if (response.data && api.url.includes('localhost:8080')) {
+        metrics = {
+          cpuUsage: response.data.cpuPercent || 0,
+          memoryUsageMB: Math.round((response.data.memoryUsedKb || 0) / 1024),
+          sizeKB: (JSON.stringify(response.data).length / 1024).toFixed(2)
+        };
+      } else {
+        const cpuUsagePercent = ((afterMetrics.cpuUsage.total - afterMetrics.cpuUsage.idle) / afterMetrics.cpuUsage.total) * 100;
+        const memoryUsage = afterMetrics.memoryUsage.rss - beforeMetrics.memoryUsage.rss;
+        
+        metrics = {
+          cpuUsage: cpuUsagePercent.toFixed(2),
+          memoryUsageMB: Math.round(memoryUsage / 1024 / 1024),
+          sizeKB: response.data ? (JSON.stringify(response.data).length / 1024).toFixed(2) : 0
+        };
+      }
 
       currentResults[apiKey].push({
         name: api.name,
         url: api.url,
-        responseTimeMs: duration,
-        sizeKB: sizeKB ? parseFloat(sizeKB) : null,
+        responseTimeMs: response.data?.durationMs || duration,
+        sizeKB: metrics.sizeKB,
         status: status,
         timestamp: new Date().toISOString(),
         systemMetrics: {
-          cpuUsage: cpuUsagePercent.toFixed(2), // CPU kullanım yüzdesi
-          memoryUsageMB: Math.round(memoryUsage / 1024 / 1024), // MB cinsinden bellek kullanımı
-          freeMemoryPercent: Math.round((afterMetrics.freeMemory / afterMetrics.totalMemory) * 100)
+          cpuUsage: metrics.cpuUsage,
+          memoryUsageMB: metrics.memoryUsageMB,
+          recordCount: response.data?.recordCount || 0
         }
       });
     } catch (err) {
       console.error(`Error fetching ${api.url}:`, err.message);
-      // Get system metrics at the time of error
+
       const errorMetrics = getSystemMetrics();
       const cpuUsagePercent = ((errorMetrics.cpuUsage.total - errorMetrics.cpuUsage.idle) / errorMetrics.cpuUsage.total) * 100;
       
@@ -235,7 +247,7 @@ app.post('/config', (req, res) => {
       });
     }
 
-    // If api2 is not configured, set it to empty
+ 
     if (!api2 || !api2.url) {
       apiConfig = { 
         api1, 
@@ -257,17 +269,42 @@ app.post('/config', (req, res) => {
 
 app.get('/results', async (req, res) => {
   try {
+    const reset = req.query.reset === 'true';
     const allResults = readResultsFile();
+    
+
+    if (reset) {
+      writeResultsFile({ api1: [], api2: [] });
+      const emptyMetrics = {
+        successRate: 0,
+        avgResponseTime: 0,
+        totalRequests: 0,
+        timestamps: [],
+        responseTimes: [],
+        systemMetrics: {
+          cpuUsage: 0,
+          memoryUsageMB: 0,
+          sizeKB: 0
+        }
+      };
+
+      res.json({
+        api1Metrics: emptyMetrics,
+        api2Metrics: null,
+        combinedMetrics: null
+      });
+      return;
+    }
     
     const api1Metrics = calculateMetrics(allResults, 'api1');
     let api2Metrics = null;
     let combinedMetrics = null;
 
-    // Only calculate API2 metrics if it's configured
+ 
     if (apiConfig.api2.url) {
       api2Metrics = calculateMetrics(allResults, 'api2');
       
-      // Only include combined metrics if both APIs are configured
+ 
       combinedMetrics = {
         timestamps: [...new Set([
           ...api1Metrics.timestamps,
@@ -286,6 +323,17 @@ app.get('/results', async (req, res) => {
   } catch (error) {
     console.error('Error in /results endpoint:', error);
     res.status(500).json({ error: error.message });
+  }
+});
+
+
+app.post('/reset-results', (req, res) => {
+  try {
+    writeResultsFile({ api1: [], api2: [] });
+    res.json({ success: true, message: 'Results file has been reset' });
+  } catch (error) {
+    console.error('Error resetting results file:', error);
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 

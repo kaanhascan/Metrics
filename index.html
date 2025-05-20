@@ -310,6 +310,11 @@
             <div class="value" id="api1-memory-usage">-- MB</div>
             <div class="change">Last request</div>
           </div>
+          <div class="metric-card">
+            <h3>Response Size</h3>
+            <div class="value" id="api1-response-size">-- KB</div>
+            <div class="change">Last request</div>
+          </div>
         </div>
         <div class="chart-container">
           <h2 id="api1-chart-title">Response Time Trend</h2>
@@ -345,6 +350,11 @@
           <div class="metric-card">
             <h3>Memory Usage</h3>
             <div class="value" id="api2-memory-usage">-- MB</div>
+            <div class="change">Last request</div>
+          </div>
+          <div class="metric-card">
+            <h3>Response Size</h3>
+            <div class="value" id="api2-response-size">-- KB</div>
             <div class="change">Last request</div>
           </div>
         </div>
@@ -578,6 +588,7 @@
       if (data.systemMetrics) {
         document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
         document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
+        document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
       }
 
       const chart = apiNumber === 1 ? api1ResponseTimeChart : api2ResponseTimeChart;
@@ -696,43 +707,58 @@
     });
 
     async function resetMetrics() {
-      if (!confirm('Are you sure you want to reset all displayed metrics?')) {
+      if (!confirm('Are you sure you want to reset all metrics and clear the results file?')) {
         return;
       }
 
-      document.getElementById('api1-success-rate').textContent = '--%';
-      document.getElementById('api1-avg-response').textContent = '-- ms';
-      document.getElementById('api1-total-requests').textContent = '--';
-      document.getElementById('api1-cpu-usage').textContent = '--%';
-      document.getElementById('api1-memory-usage').textContent = '-- MB';
+      try {
 
-      document.getElementById('api2-success-rate').textContent = '--%';
-      document.getElementById('api2-avg-response').textContent = '-- ms';
-      document.getElementById('api2-total-requests').textContent = '--';
-      document.getElementById('api2-cpu-usage').textContent = '--%';
-      document.getElementById('api2-memory-usage').textContent = '-- MB';
+        const resetResponse = await fetch('/reset-results', { method: 'POST' });
+        if (!resetResponse.ok) {
+          throw new Error('Failed to reset results file');
+        }
 
 
-      api1ResponseTimeChart.data.labels = [];
-      api1ResponseTimeChart.data.datasets[0].data = [];
-      api1ResponseTimeChart.update();
+        document.getElementById('api1-success-rate').textContent = '--%';
+        document.getElementById('api1-avg-response').textContent = '-- ms';
+        document.getElementById('api1-total-requests').textContent = '--';
+        document.getElementById('api1-cpu-usage').textContent = '--%';
+        document.getElementById('api1-memory-usage').textContent = '-- MB';
+        document.getElementById('api1-response-size').textContent = '-- KB';
 
-      api2ResponseTimeChart.data.labels = [];
-      api2ResponseTimeChart.data.datasets[0].data = [];
-      api2ResponseTimeChart.update();
+        document.getElementById('api2-success-rate').textContent = '--%';
+        document.getElementById('api2-avg-response').textContent = '-- ms';
+        document.getElementById('api2-total-requests').textContent = '--';
+        document.getElementById('api2-cpu-usage').textContent = '--%';
+        document.getElementById('api2-memory-usage').textContent = '-- MB';
+        document.getElementById('api2-response-size').textContent = '-- KB';
 
-      combinedResponseTimeChart.data.labels = [];
-      combinedResponseTimeChart.data.datasets[0].data = [];
-      combinedResponseTimeChart.data.datasets[1].data = [];
-      combinedResponseTimeChart.update();
 
-      combinedSuccessRateChart.data.datasets[0].data = [0, 0];
-      combinedSuccessRateChart.update();
+        api1ResponseTimeChart.data.labels = [];
+        api1ResponseTimeChart.data.datasets[0].data = [];
+        api1ResponseTimeChart.update();
 
-      document.getElementById('last-update-time').textContent = '--';
-      document.getElementById('error-message').style.display = 'none';
+        api2ResponseTimeChart.data.labels = [];
+        api2ResponseTimeChart.data.datasets[0].data = [];
+        api2ResponseTimeChart.update();
 
-      setTimeout(fetchData, 1000);
+        combinedResponseTimeChart.data.labels = [];
+        combinedResponseTimeChart.data.datasets[0].data = [];
+        combinedResponseTimeChart.data.datasets[1].data = [];
+        combinedResponseTimeChart.update();
+
+        combinedSuccessRateChart.data.datasets[0].data = [0, 0];
+        combinedSuccessRateChart.update();
+
+        document.getElementById('last-update-time').textContent = '--';
+        document.getElementById('error-message').style.display = 'none';
+
+        setTimeout(fetchData, 1000);
+      } catch (error) {
+        console.error('Error resetting metrics:', error);
+        document.getElementById('error-message').textContent = `Error resetting metrics: ${error.message}`;
+        document.getElementById('error-message').style.display = 'block';
+      }
     }
   </script>
 </body>
