@@ -159,45 +159,23 @@ async function makeApiRequests() {
         throw err;
       }
 
- 
       const afterMetrics = getSystemMetrics();
       const end = Date.now();
       const duration = end - start;
 
-
-      let metrics = {
-        cpuUsage: 0,
-        memoryUsageMB: 0,
-        sizeKB: 0
-      };
-
-      if (response.data && api.url.includes('localhost:8080')) {
-        metrics = {
-          cpuUsage: response.data.cpuPercent || 0,
-          memoryUsageMB: Math.round((response.data.memoryUsedKb || 0) / 1024),
-          sizeKB: (JSON.stringify(response.data).length / 1024).toFixed(2)
-        };
-      } else {
-        const cpuUsagePercent = ((afterMetrics.cpuUsage.total - afterMetrics.cpuUsage.idle) / afterMetrics.cpuUsage.total) * 100;
-        const memoryUsage = afterMetrics.memoryUsage.rss - beforeMetrics.memoryUsage.rss;
-        
-        metrics = {
-          cpuUsage: cpuUsagePercent.toFixed(2),
-          memoryUsageMB: Math.round(memoryUsage / 1024 / 1024),
-          sizeKB: response.data ? (JSON.stringify(response.data).length / 1024).toFixed(2) : 0
-        };
-      }
+      // Calculate response size in KB
+      const sizeKB = response.data ? (JSON.stringify(response.data).length / 1024).toFixed(2) : 0;
 
       currentResults[apiKey].push({
         name: api.name,
         url: api.url,
         responseTimeMs: response.data?.durationMs || duration,
-        sizeKB: metrics.sizeKB,
+        sizeKB: sizeKB,
         status: status,
         timestamp: new Date().toISOString(),
         systemMetrics: {
-          cpuUsage: metrics.cpuUsage,
-          memoryUsageMB: metrics.memoryUsageMB,
+          cpuUsage: response.data?.cpuPercent || 0,
+          memoryUsageMB: Math.round((response.data?.memoryUsedKb || 0) / 1024),
           recordCount: response.data?.recordCount || 0
         }
       });
