@@ -552,17 +552,24 @@
       document.getElementById('api1-chart-title').textContent = `${api1Name} Response Time Trend`;
       document.getElementById('api2-chart-title').textContent = `${api2Name} Response Time Trend`;
       
-      
+      const api1Section = document.getElementById('api1-section');
       const api2Section = document.getElementById('api2-section');
       const combinedMetrics = document.querySelector('.combined-metrics');
+      const container = document.querySelector('.api-sections-container');
       if (!api2Name) {
         api2Section.style.display = 'none';
         combinedMetrics.style.display = 'none';
-        document.getElementById('api1-section').style.flex = '1';
+        api1Section.style.flex = '1 1 100%';
+        api1Section.style.maxWidth = '100%';
+        container.style.flexDirection = 'row';
       } else {
         api2Section.style.display = 'block';
         combinedMetrics.style.display = 'block';
-        document.getElementById('api1-section').style.flex = '1';
+        api1Section.style.flex = '1 1 0';
+        api2Section.style.flex = '1 1 0';
+        api1Section.style.maxWidth = '50%';
+        api2Section.style.maxWidth = '50%';
+        container.style.flexDirection = 'row';
       }
 
       combinedResponseTimeChart.data.datasets[0].label = api1Name;
@@ -584,12 +591,9 @@
       document.getElementById(`${prefix}-success-rate`).textContent = `${data.successRate}%`;
       document.getElementById(`${prefix}-avg-response`).textContent = `${data.avgResponseTime} ms`;
       document.getElementById(`${prefix}-total-requests`).textContent = data.totalRequests;
-      
-      if (data.systemMetrics) {
-        document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
-        document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
-        document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
-      }
+      document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
+      document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
+      document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
 
       const chart = apiNumber === 1 ? api1ResponseTimeChart : api2ResponseTimeChart;
       chart.data.labels = data.timestamps.map(formatTimestamp);
