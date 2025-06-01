@@ -315,6 +315,11 @@
             <div class="value" id="api1-response-size">-- KB</div>
             <div class="change">Last request</div>
           </div>
+          <div class="metric-card">
+            <h3>Uptime</h3>
+            <div class="value" id="api1-uptime">--</div>
+            <div class="change">Since start</div>
+          </div>
         </div>
         <div class="chart-container">
           <h2 id="api1-chart-title">Response Time Trend</h2>
@@ -357,6 +362,11 @@
             <div class="value" id="api2-response-size">-- KB</div>
             <div class="change">Last request</div>
           </div>
+          <div class="metric-card">
+            <h3>Uptime</h3>
+            <div class="value" id="api2-uptime">--</div>
+            <div class="change">Since start</div>
+          </div>
         </div>
         <div class="chart-container">
           <h2 id="api2-chart-title">Response Time Trend</h2>
@@ -392,6 +402,16 @@
     let combinedResponseTimeChart;
     let combinedSuccessRateChart;
     
+    let uptimeIntervals = {
+      api1: null,
+      api2: null
+    };
+
+    let uptimeStartTimes = {
+      api1: null,
+      api2: null
+    };
+
     function initCharts() {
       const commonOptions = {
         responsive: true,
@@ -585,6 +605,23 @@
       return date.toLocaleTimeString();
     }
 
+    function formatUptime(uptimeSeconds) {
+      const days = Math.floor(uptimeSeconds / 86400);
+      const hours = Math.floor((uptimeSeconds % 86400) / 3600);
+      const minutes = Math.floor((uptimeSeconds % 3600) / 60);
+      const seconds = uptimeSeconds % 60;
+      
+      if (days > 0) {
+        return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else if (hours > 0) {
+        return `${hours}h ${minutes}m ${seconds}s`;
+      } else if (minutes > 0) {
+        return `${minutes}m ${seconds}s`;
+      } else {
+        return `${seconds}s`;
+      }
+    }
+
     function updateApiMetrics(apiNumber, data) {
       const prefix = `api${apiNumber}`;
       
@@ -594,6 +631,24 @@
       document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
       document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
       document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
+
+      // Set uptime start time for real-time counter
+      if (data.uptime && data.uptime !== '--' && !uptimeStartTimes[`api${apiNumber}`]) {
+        const uptimeMatch = data.uptime.match(/(\d+)s|(\d+)m\s*(\d+)s|(\d+)h\s*(\d+)m\s*(\d+)s|(\d+)d\s*(\d+)h\s*(\d+)m/);
+        if (uptimeMatch) {
+          let totalSeconds = 0;
+          if (uptimeMatch[1]) { // just seconds
+            totalSeconds = parseInt(uptimeMatch[1]);
+          } else if (uptimeMatch[2] && uptimeMatch[3]) { // minutes and seconds
+            totalSeconds = parseInt(uptimeMatch[2]) * 60 + parseInt(uptimeMatch[3]);
+          } else if (uptimeMatch[4] && uptimeMatch[5] && uptimeMatch[6]) { // hours, minutes, seconds
+            totalSeconds = parseInt(uptimeMatch[4]) * 3600 + parseInt(uptimeMatch[5]) * 60 + parseInt(uptimeMatch[6]);
+          }
+          
+          uptimeStartTimes[`api${apiNumber}`] = new Date(Date.now() - (totalSeconds * 1000));
+          startUptimeCounters();
+        }
+      }
 
       const chart = apiNumber === 1 ? api1ResponseTimeChart : api2ResponseTimeChart;
       chart.data.labels = data.timestamps.map(formatTimestamp);
@@ -662,6 +717,32 @@
       }
     }
 
+    function startUptimeCounters() {
+      // Clear existing intervals
+      if (uptimeIntervals.api1) clearInterval(uptimeIntervals.api1);
+      if (uptimeIntervals.api2) clearInterval(uptimeIntervals.api2);
+
+      // Start API 1 uptime counter
+      if (uptimeStartTimes.api1) {
+        uptimeIntervals.api1 = setInterval(() => {
+          const now = new Date();
+          const diffMs = now - uptimeStartTimes.api1;
+          const uptimeSeconds = Math.floor(diffMs / 1000);
+          document.getElementById('api1-uptime').textContent = formatUptime(uptimeSeconds);
+        }, 1000);
+      }
+
+      // Start API 2 uptime counter
+      if (uptimeStartTimes.api2) {
+        uptimeIntervals.api2 = setInterval(() => {
+          const now = new Date();
+          const diffMs = now - uptimeStartTimes.api2;
+          const uptimeSeconds = Math.floor(diffMs / 1000);
+          document.getElementById('api2-uptime').textContent = formatUptime(uptimeSeconds);
+        }, 1000);
+      }
+    }
+
     function saveConfiguration() {
       const api1Name = document.getElementById('api1-name').value;
       const api1Url = document.getElementById('api1-url').value;
@@ -686,7 +767,12 @@
       .then(response => response.json())
       .then(data => {
         if (data.success) {
+          // Reset uptime counters for new configuration
+          uptimeStartTimes.api1 = new Date();
+          uptimeStartTimes.api2 = api2Url ? new Date() : null;
+          
           updateApiNames(api1Name, api2Name);
+          startUptimeCounters();
           alert('Configuration saved successfully!');
           fetchData();
         } else {
@@ -716,12 +802,16 @@
       }
 
       try {
-
         const resetResponse = await fetch('/reset-results', { method: 'POST' });
         if (!resetResponse.ok) {
           throw new Error('Failed to reset results file');
         }
 
+        // Clear uptime counters
+        if (uptimeIntervals.api1) clearInterval(uptimeIntervals.api1);
+        if (uptimeIntervals.api2) clearInterval(uptimeIntervals.api2);
+        uptimeStartTimes.api1 = null;
+        uptimeStartTimes.api2 = null;
 
         document.getElementById('api1-success-rate').textContent = '--%';
         document.getElementById('api1-avg-response').textContent = '-- ms';
@@ -729,6 +819,7 @@
         document.getElementById('api1-cpu-usage').textContent = '--%';
         document.getElementById('api1-memory-usage').textContent = '-- MB';
         document.getElementById('api1-response-size').textContent = '-- KB';
+        document.getElementById('api1-uptime').textContent = '--';
 
         document.getElementById('api2-success-rate').textContent = '--%';
         document.getElementById('api2-avg-response').textContent = '-- ms';
@@ -736,6 +827,7 @@
         document.getElementById('api2-cpu-usage').textContent = '--%';
         document.getElementById('api2-memory-usage').textContent = '-- MB';
         document.getElementById('api2-response-size').textContent = '-- KB';
+        document.getElementById('api2-uptime').textContent = '--';
 
 
         api1ResponseTimeChart.data.labels = [];

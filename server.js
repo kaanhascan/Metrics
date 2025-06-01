@@ -13,6 +13,12 @@ let apiConfig = {
   api2: { name: '', url: '' }
 };
 
+
+let apiStartTimes = {
+  api1: null,
+  api2: null
+};
+
 function readResultsFile() {
   try {
     if (fs.existsSync('results.json')) {
@@ -163,7 +169,6 @@ async function makeApiRequests() {
       const end = Date.now();
       const duration = end - start;
 
-      // Calculate response size in KB
       const sizeKB = response.data ? (JSON.stringify(response.data).length / 1024).toFixed(2) : 0;
 
       currentResults[apiKey].push({
@@ -225,15 +230,22 @@ app.post('/config', (req, res) => {
       });
     }
 
- 
-    if (!api2 || !api2.url) {
-      apiConfig = { 
-        api1, 
-        api2: { name: '', url: '' } 
-      };
-    } else {
-      apiConfig = { api1, api2 };
+    // Set start times for APIs
+    if (api1.url && apiConfig.api1.url !== api1.url) {
+      apiStartTimes.api1 = new Date();
     }
+    
+    if (api2 && api2.url && apiConfig.api2.url !== api2.url) {
+      apiStartTimes.api2 = new Date();
+    } else if (!api2 || !api2.url) {
+      apiStartTimes.api2 = null;
+    }
+
+    
+    apiConfig = { 
+      api1, 
+      api2: api2 && api2.url ? api2 : { name: '', url: '' }
+    };
 
     res.json({ success: true });
   } catch (error) {
@@ -245,12 +257,35 @@ app.post('/config', (req, res) => {
   }
 });
 
+function calculateUptime(startTime) {
+  if (!startTime) return 0;
+  const now = new Date();
+  const diffMs = now - startTime;
+  return Math.floor(diffMs / 1000); // seconds
+}
+
+function formatUptime(uptimeSeconds) {
+  const days = Math.floor(uptimeSeconds / 86400);
+  const hours = Math.floor((uptimeSeconds % 86400) / 3600);
+  const minutes = Math.floor((uptimeSeconds % 3600) / 60);
+  const seconds = uptimeSeconds % 60;
+  
+  if (days > 0) {
+    return `${days}d ${hours}h ${minutes}m`;
+  } else if (hours > 0) {
+    return `${hours}h ${minutes}m ${seconds}s`;
+  } else if (minutes > 0) {
+    return `${minutes}m ${seconds}s`;
+  } else {
+    return `${seconds}s`;
+  }
+}
+
 app.get('/results', async (req, res) => {
   try {
     const reset = req.query.reset === 'true';
     const allResults = readResultsFile();
     
-
     if (reset) {
       writeResultsFile({ api1: [], api2: [] });
       const emptyMetrics = {
@@ -259,6 +294,7 @@ app.get('/results', async (req, res) => {
         totalRequests: 0,
         timestamps: [],
         responseTimes: [],
+        uptime: '0s',
         systemMetrics: {
           cpuUsage: 0,
           memoryUsageMB: 0,
@@ -275,14 +311,15 @@ app.get('/results', async (req, res) => {
     }
     
     const api1Metrics = calculateMetrics(allResults, 'api1');
+    api1Metrics.uptime = formatUptime(calculateUptime(apiStartTimes.api1));
+    
     let api2Metrics = null;
     let combinedMetrics = null;
 
- 
     if (apiConfig.api2.url) {
       api2Metrics = calculateMetrics(allResults, 'api2');
+      api2Metrics.uptime = formatUptime(calculateUptime(apiStartTimes.api2));
       
- 
       combinedMetrics = {
         timestamps: [...new Set([
           ...api1Metrics.timestamps,
@@ -304,34 +341,30 @@ app.get('/results', async (req, res) => {
   }
 });
 
-
 app.post('/reset-results', (req, res) => {
   try {
     writeResultsFile({ api1: [], api2: [] });
-    res.json({ success: true, message: 'Results file has been reset' });
+    
+    // Reset start times
+    apiStartTimes.api1 = apiConfig.api1.url ? new Date() : null;
+    apiStartTimes.api2 = apiConfig.api2.url ? new Date() : null;
+    
+    res.json({ success: true });
   } catch (error) {
-    console.error('Error resetting results file:', error);
-    res.status(500).json({ success: false, error: error.message });
+    console.error('Error resetting results:', error);
+    res.status(500).json({ 
+      success: false, 
+      error: error.message 
+    });
   }
 });
 
-app.get('/health', (req, res) => {
-  const systemMetrics = getSystemMetrics();
-  const healthData = {
-    status: 'UP',
-    timestamp: new Date().toISOString(),
-    metrics: {
-      cpuUsage: `${(systemMetrics.cpuUsage.total / 1000).toFixed(2)} ms`,
-      memoryUsageMB: `${Math.round(systemMetrics.memoryUsage.rss / 1024 / 1024)} MB`,
-      freeMemoryPercent: `${Math.round((systemMetrics.freeMemory / systemMetrics.totalMemory) * 100)}%`,
-      uptime: `${Math.round(systemMetrics.uptime)} seconds`
-    }
-  };
-  res.json(healthData);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Dashboard available at http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
+  console.log('API Performance Dashboard is ready!');
 });
