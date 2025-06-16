@@ -1,4965 +1,603 @@
 {
   "api1": [
     {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 401,
-      "sizeKB": "0.08",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 318,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:36:40.679Z",
+      "timestamp": "2025-06-16T16:43:06.935Z",
       "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 149,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:36:44.962Z",
-      "systemMetrics": {
-        "cpuUsage": 0.775,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:36:49.921Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:36:54.919Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:36:59.939Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:05.036Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:09.976Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 147,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:14.976Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:19.987Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:24.986Z",
-      "systemMetrics": {
-        "cpuUsage": 1.26,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 147,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:30.011Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:35.071Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:40.034Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:45.041Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:50.080Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:55.118Z",
-      "systemMetrics": {
-        "cpuUsage": 1.5833333333333335,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:00.087Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:05.078Z",
-      "systemMetrics": {
-        "cpuUsage": 0.375,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:10.089Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:15.103Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:20.110Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 148,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:25.153Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:30.120Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:35.176Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:40.128Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:45.146Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 141,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:50.139Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:55.174Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 149,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:00.198Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:05.179Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:10.238Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:15.221Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:20.211Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:25.212Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 151,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:30.224Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:35.245Z",
-      "systemMetrics": {
-        "cpuUsage": 1.9,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:40.230Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:45.246Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:50.244Z",
-      "systemMetrics": {
-        "cpuUsage": 0.9400000000000001,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:55.320Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:00.389Z",
-      "systemMetrics": {
-        "cpuUsage": 0.9199999999999999,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:05.898Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:10.274Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:15.288Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 151,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:20.300Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:25.320Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 141,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:30.299Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:35.341Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 147,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:40.315Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:45.310Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:50.320Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:55.356Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 145,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:00.377Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:05.352Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 141,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:10.350Z",
-      "systemMetrics": {
-        "cpuUsage": 0.9400000000000001,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:15.359Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:20.370Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:25.382Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 142,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:30.395Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 148,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:35.483Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 140,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:40.424Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 146,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:45.432Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 141,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:50.420Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:55.482Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:00.460Z",
-      "systemMetrics": {
-        "cpuUsage": 0.9199999999999999,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 148,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:05.465Z",
-      "systemMetrics": {
-        "cpuUsage": 1.58,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:10.476Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:15.477Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:20.495Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:25.500Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:30.507Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:35.549Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:40.526Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:45.530Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:50.578Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:55.616Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:00.550Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:05.552Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:10.563Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 144,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:15.567Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:20.569Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 143,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:25.590Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 169,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:30.615Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:35.614Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 151,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:40.616Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:45.615Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:50.616Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:55.664Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:00.656Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:05.650Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:10.672Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:15.688Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 162,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:20.708Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:25.700Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 160,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:30.724Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:35.721Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:40.715Z",
-      "systemMetrics": {
-        "cpuUsage": 1.8599999999999999,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:45.728Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 160,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:50.732Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:55.777Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:00.767Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:05.771Z",
-      "systemMetrics": {
-        "cpuUsage": 0.6,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:10.782Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 167,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:15.814Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:20.799Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:25.807Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:30.816Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:35.824Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:40.819Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:45.840Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:50.849Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:55.890Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:00.860Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:05.864Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:10.877Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:15.922Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:20.901Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 163,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:25.934Z",
-      "systemMetrics": {
-        "cpuUsage": 1.8800000000000001,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:30.920Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:35.925Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:40.942Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:45.940Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:50.963Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:56.003Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:00.977Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:05.993Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:10.997Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 160,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:16.045Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:21.038Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:26.025Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:31.032Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 151,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:36.041Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:41.047Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:46.046Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:51.061Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:56.114Z",
-      "systemMetrics": {
-        "cpuUsage": 0.25,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:01.086Z",
-      "systemMetrics": {
-        "cpuUsage": 0.64,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:06.090Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:11.098Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:16.096Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:21.106Z",
-      "systemMetrics": {
-        "cpuUsage": 0.62,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:26.120Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:31.137Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:36.129Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 160,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:41.145Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:46.151Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:51.168Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:56.177Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:01.178Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 159,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:06.215Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:11.200Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:16.217Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:21.219Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:26.223Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:31.233Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:36.251Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:41.261Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:46.259Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:51.285Z",
-      "systemMetrics": {
-        "cpuUsage": 1.9,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:56.294Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:01.310Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:06.328Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:11.299Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:16.305Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:21.335Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:26.331Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:31.337Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 161,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:36.360Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:41.351Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:46.369Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:51.384Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:56.376Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:01.377Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:06.413Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:11.378Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:16.394Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:21.629Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:26.495Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:31.428Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 155,
-      "sizeKB": "0.09",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:36.455Z",
-      "systemMetrics": {
-        "cpuUsage": 1.5599999999999998,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:41.450Z",
-      "systemMetrics": {
-        "cpuUsage": 0.3,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 156,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:46.456Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 161,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:51.492Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:56.453Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 154,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:01.492Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 159,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:06.503Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 159,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:11.486Z",
-      "systemMetrics": {
-        "cpuUsage": 0,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 153,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:16.533Z",
-      "systemMetrics": {
-        "cpuUsage": 0.6,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 152,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:21.542Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 158,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:26.543Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 1,
-        "recordCount": 1004
-      }
-    },
-    {
-      "name": "Nest",
-      "url": "http://localhost:3000/performance/fetch-product",
-      "responseTimeMs": 157,
-      "sizeKB": "0.08",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:31.554Z",
-      "systemMetrics": {
-        "cpuUsage": 0.32,
-        "memoryUsageMB": 0,
-        "recordCount": 1004
-      }
-    }
-  ],
-  "api2": [
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "Request failed with status code 500",
-      "status": 500,
-      "timestamp": "2025-06-01T22:36:41.090Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 52,
-        "freeMemoryPercent": 53
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "Request failed with status code 400",
-      "status": 400,
-      "timestamp": "2025-06-01T22:36:45.064Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 52,
-        "freeMemoryPercent": 53
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "Request failed with status code 400",
-      "status": 400,
-      "timestamp": "2025-06-01T22:36:50.022Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 53,
-        "freeMemoryPercent": 53
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "Request failed with status code 400",
-      "status": 400,
-      "timestamp": "2025-06-01T22:36:55.028Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 53,
-        "freeMemoryPercent": 53
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "",
-      "status": 0,
-      "timestamp": "2025-06-01T22:36:59.942Z",
-      "systemMetrics": {
-        "cpuUsage": "23.33",
-        "memoryUsageMB": 53,
-        "freeMemoryPercent": 55
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "",
-      "status": 0,
-      "timestamp": "2025-06-01T22:37:05.038Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 53,
-        "freeMemoryPercent": 54
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "error": "",
-      "status": 0,
-      "timestamp": "2025-06-01T22:37:09.979Z",
-      "systemMetrics": {
-        "cpuUsage": "23.34",
-        "memoryUsageMB": 53,
-        "freeMemoryPercent": 53
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 287,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:17.156Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 4,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 261,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:21.393Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
+        "cpuUsage": 43,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 315,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:37:26.375Z",
+      "timestamp": "2025-06-16T16:43:11.940Z",
       "systemMetrics": {
-        "cpuUsage": 10,
+        "cpuUsage": 26,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 260,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:37:31.404Z",
+      "timestamp": "2025-06-16T16:43:16.944Z",
       "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": -47,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:36.447Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
+        "cpuUsage": 24,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 259,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:37:41.425Z",
+      "timestamp": "2025-06-16T16:43:21.940Z",
       "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": -8,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:37:46.425Z",
-      "systemMetrics": {
-        "cpuUsage": 14,
+        "cpuUsage": 27,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 317,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:37:51.470Z",
+      "timestamp": "2025-06-16T16:43:26.967Z",
       "systemMetrics": {
-        "cpuUsage": 35,
+        "cpuUsage": 18,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:37:56.505Z",
+      "timestamp": "2025-06-16T16:43:31.962Z",
       "systemMetrics": {
-        "cpuUsage": 8,
+        "cpuUsage": 24,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 324,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:38:01.471Z",
+      "timestamp": "2025-06-16T16:43:36.994Z",
+      "systemMetrics": {
+        "cpuUsage": 29,
+        "memoryUsageMB": -59,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
+      "status": 200,
+      "timestamp": "2025-06-16T16:43:41.973Z",
       "systemMetrics": {
         "cpuUsage": 16,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:38:06.470Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 247,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:11.476Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 265,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:16.489Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:21.500Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:26.545Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 266,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:31.513Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:36.562Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:41.519Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:46.519Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": -49,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:51.529Z",
-      "systemMetrics": {
-        "cpuUsage": 17,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:38:56.555Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 248,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:01.573Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:06.569Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 247,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:11.614Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 249,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:16.596Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:21.598Z",
-      "systemMetrics": {
-        "cpuUsage": 17,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 263,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:26.611Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:31.608Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:36.617Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:41.614Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:46.624Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:51.624Z",
-      "systemMetrics": {
-        "cpuUsage": 16,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 270,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:39:56.730Z",
-      "systemMetrics": {
-        "cpuUsage": 23,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:01.762Z",
-      "systemMetrics": {
-        "cpuUsage": 14,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:07.289Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 259,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:11.659Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:16.676Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 269,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:21.749Z",
-      "systemMetrics": {
-        "cpuUsage": 21,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:26.707Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:31.685Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:36.721Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:41.697Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:46.702Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:51.701Z",
-      "systemMetrics": {
-        "cpuUsage": 17,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 262,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:40:56.753Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:01.760Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:06.735Z",
-      "systemMetrics": {
-        "cpuUsage": 14,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:11.737Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:16.746Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:21.757Z",
-      "systemMetrics": {
-        "cpuUsage": 17,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:26.776Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:31.779Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 246,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:36.860Z",
-      "systemMetrics": {
-        "cpuUsage": 16,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:41.806Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:46.808Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:41:51.797Z",
+      "timestamp": "2025-06-16T16:43:46.974Z",
       "systemMetrics": {
         "cpuUsage": 18,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:41:56.865Z",
+      "timestamp": "2025-06-16T16:43:51.993Z",
       "systemMetrics": {
-        "cpuUsage": 21,
+        "cpuUsage": 42,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:42:01.841Z",
+      "timestamp": "2025-06-16T16:43:56.994Z",
       "systemMetrics": {
         "cpuUsage": 17,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:42:06.843Z",
+      "timestamp": "2025-06-16T16:44:02.005Z",
       "systemMetrics": {
-        "cpuUsage": 18,
+        "cpuUsage": 29,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 263,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 317,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:42:11.870Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:16.861Z",
-      "systemMetrics": {
-        "cpuUsage": 4,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:21.885Z",
-      "systemMetrics": {
-        "cpuUsage": 18,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:26.880Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:31.894Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:36.929Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": -176,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:41.913Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:46.911Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 247,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:51.950Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:42:56.996Z",
-      "systemMetrics": {
-        "cpuUsage": 21,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 247,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:01.925Z",
-      "systemMetrics": {
-        "cpuUsage": 18,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:06.937Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:11.948Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 260,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:16.965Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:21.950Z",
-      "systemMetrics": {
-        "cpuUsage": 16,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 249,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:26.969Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 230,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:31.977Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 233,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:36.977Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 231,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:41.977Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 232,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:46.968Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 234,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:51.977Z",
-      "systemMetrics": {
-        "cpuUsage": 18,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 236,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:43:57.028Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:02.057Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:07.042Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 268,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:12.065Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 260,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:17.077Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 248,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:22.083Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:27.087Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:32.120Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 261,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:37.111Z",
-      "systemMetrics": {
-        "cpuUsage": 17,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:42.097Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:47.121Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:52.121Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:44:57.165Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:02.144Z",
+      "timestamp": "2025-06-16T16:44:07.004Z",
       "systemMetrics": {
         "cpuUsage": 28,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 319,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:45:07.155Z",
-      "systemMetrics": {
-        "cpuUsage": 18,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:12.161Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:17.207Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 283,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:22.276Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:27.181Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:32.204Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:37.202Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:42.202Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 268,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:47.241Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:45:52.242Z",
+      "timestamp": "2025-06-16T16:44:12.017Z",
       "systemMetrics": {
         "cpuUsage": 17,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:45:57.273Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:02.238Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:07.247Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:12.257Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:17.309Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 269,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:22.297Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:27.313Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:32.297Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:37.303Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:42.322Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:47.316Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:52.340Z",
-      "systemMetrics": {
-        "cpuUsage": 22,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:46:57.389Z",
-      "systemMetrics": {
-        "cpuUsage": 25,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:02.353Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 1,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:07.382Z",
-      "systemMetrics": {
-        "cpuUsage": 20,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 249,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:12.370Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:17.423Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:22.417Z",
-      "systemMetrics": {
-        "cpuUsage": 21,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:27.411Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:32.415Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:47:37.419Z",
+      "timestamp": "2025-06-16T16:44:17.019Z",
       "systemMetrics": {
         "cpuUsage": 17,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:47:42.429Z",
+      "timestamp": "2025-06-16T16:44:22.045Z",
       "systemMetrics": {
-        "cpuUsage": 7,
+        "cpuUsage": 41,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 248,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:47:47.423Z",
+      "timestamp": "2025-06-16T16:44:27.066Z",
       "systemMetrics": {
-        "cpuUsage": 7,
+        "cpuUsage": 26,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 331,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:47:52.442Z",
+      "timestamp": "2025-06-16T16:44:32.024Z",
       "systemMetrics": {
-        "cpuUsage": 18,
+        "cpuUsage": 33,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 318,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:47:57.500Z",
+      "timestamp": "2025-06-16T16:44:37.073Z",
       "systemMetrics": {
-        "cpuUsage": 16,
+        "cpuUsage": 42,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 320,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:48:02.480Z",
+      "timestamp": "2025-06-16T16:44:42.079Z",
       "systemMetrics": {
-        "cpuUsage": 19,
+        "cpuUsage": 35,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:48:07.478Z",
+      "timestamp": "2025-06-16T16:44:47.072Z",
       "systemMetrics": {
-        "cpuUsage": 18,
+        "cpuUsage": 25,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 318,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:48:12.475Z",
+      "timestamp": "2025-06-16T16:44:52.087Z",
       "systemMetrics": {
-        "cpuUsage": 6,
+        "cpuUsage": 37,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:48:17.474Z",
+      "timestamp": "2025-06-16T16:44:57.069Z",
       "systemMetrics": {
-        "cpuUsage": 7,
+        "cpuUsage": 35,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 249,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 311,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:48:22.481Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:27.500Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:32.514Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:37.517Z",
-      "systemMetrics": {
-        "cpuUsage": 13,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:42.518Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 265,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:47.544Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:52.550Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:48:57.553Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:02.569Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 259,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:07.602Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:12.584Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:17.602Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:22.601Z",
-      "systemMetrics": {
-        "cpuUsage": 10,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 247,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:27.597Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:32.606Z",
-      "systemMetrics": {
-        "cpuUsage": 5,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:37.642Z",
-      "systemMetrics": {
-        "cpuUsage": 15,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:42.641Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:47.649Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:52.661Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 259,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:49:57.687Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:02.686Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:07.710Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 1,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:12.683Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 254,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:17.694Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:22.716Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:27.704Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 261,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:32.726Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:37.734Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 250,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:42.734Z",
-      "systemMetrics": {
-        "cpuUsage": 7,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 263,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:47.750Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 258,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:52.762Z",
-      "systemMetrics": {
-        "cpuUsage": 16,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:50:57.761Z",
-      "systemMetrics": {
-        "cpuUsage": 8,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:02.761Z",
+      "timestamp": "2025-06-16T16:45:02.074Z",
       "systemMetrics": {
         "cpuUsage": 21,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 260,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 266,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:51:07.795Z",
+      "timestamp": "2025-06-16T16:45:07.034Z",
       "systemMetrics": {
-        "cpuUsage": 10,
+        "cpuUsage": 28,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:51:12.751Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 272,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:17.789Z",
-      "systemMetrics": {
-        "cpuUsage": 12,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:23.017Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:27.876Z",
-      "systemMetrics": {
-        "cpuUsage": 16,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 255,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:32.814Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 249,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:37.825Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 248,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:42.825Z",
-      "systemMetrics": {
-        "cpuUsage": 19,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 248,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:47.837Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:52.875Z",
-      "systemMetrics": {
-        "cpuUsage": 11,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 257,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:51:57.835Z",
-      "systemMetrics": {
-        "cpuUsage": 23,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 260,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:02.892Z",
-      "systemMetrics": {
-        "cpuUsage": 25,
-        "memoryUsageMB": -95,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 256,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:07.887Z",
-      "systemMetrics": {
-        "cpuUsage": 6,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:12.871Z",
-      "systemMetrics": {
-        "cpuUsage": 4,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 259,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:17.918Z",
+      "timestamp": "2025-06-16T16:45:12.100Z",
       "systemMetrics": {
         "cpuUsage": 14,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 253,
-      "sizeKB": "0.07",
+      "name": "asdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 312,
+      "jsonSizeKb": "0.10",
       "status": 200,
-      "timestamp": "2025-06-01T22:52:22.926Z",
+      "timestamp": "2025-06-16T16:45:17.104Z",
       "systemMetrics": {
-        "cpuUsage": 13,
+        "cpuUsage": 14,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
     },
     {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 252,
-      "sizeKB": "0.07",
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 314,
+      "jsonSizeKb": 321.525390625,
       "status": 200,
-      "timestamp": "2025-06-01T22:52:27.920Z",
-      "systemMetrics": {
-        "cpuUsage": 9,
-        "memoryUsageMB": 2,
-        "recordCount": 1001
-      }
-    },
-    {
-      "name": "Spring",
-      "url": "http://localhost:8080/performance/production-fetch",
-      "responseTimeMs": 251,
-      "sizeKB": "0.07",
-      "status": 200,
-      "timestamp": "2025-06-01T22:52:32.933Z",
+      "timestamp": "2025-06-16T16:45:33.402Z",
       "systemMetrics": {
         "cpuUsage": 20,
         "memoryUsageMB": 2,
-        "recordCount": 1001
+        "recordCount": 1000
       }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 318,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:45:38.382Z",
+      "systemMetrics": {
+        "cpuUsage": 23,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 273,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:45:43.350Z",
+      "systemMetrics": {
+        "cpuUsage": 17,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 297,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:45:48.391Z",
+      "systemMetrics": {
+        "cpuUsage": 41,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 272,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:45:53.376Z",
+      "systemMetrics": {
+        "cpuUsage": 16,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 276,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:45:58.383Z",
+      "systemMetrics": {
+        "cpuUsage": 35,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 276,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:46:03.390Z",
+      "systemMetrics": {
+        "cpuUsage": 19,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 279,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:46:08.414Z",
+      "systemMetrics": {
+        "cpuUsage": 27,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:46:11.991Z",
+      "systemMetrics": {
+        "cpuUsage": "14.30",
+        "memoryUsageMB": 50,
+        "freeMemoryPercent": 46
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "Request failed with status code 500",
+      "status": 500,
+      "timestamp": "2025-06-16T16:46:17.458Z",
+      "systemMetrics": {
+        "cpuUsage": "14.30",
+        "memoryUsageMB": 50,
+        "freeMemoryPercent": 46
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "Request failed with status code 400",
+      "status": 400,
+      "timestamp": "2025-06-16T16:46:22.101Z",
+      "systemMetrics": {
+        "cpuUsage": "14.30",
+        "memoryUsageMB": 50,
+        "freeMemoryPercent": 46
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:46:27.012Z",
+      "systemMetrics": {
+        "cpuUsage": "14.30",
+        "memoryUsageMB": 50,
+        "freeMemoryPercent": 48
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:46:32.024Z",
+      "systemMetrics": {
+        "cpuUsage": "14.31",
+        "memoryUsageMB": 50,
+        "freeMemoryPercent": 47
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:46:37.026Z",
+      "systemMetrics": {
+        "cpuUsage": "14.32",
+        "memoryUsageMB": 51,
+        "freeMemoryPercent": 46
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 316,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:46:44.235Z",
+      "systemMetrics": {
+        "cpuUsage": 17,
+        "memoryUsageMB": 3,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 289,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:46:48.491Z",
+      "systemMetrics": {
+        "cpuUsage": 17,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "responseTimeMs": 292,
+      "jsonSizeKb": 321.525390625,
+      "status": 200,
+      "timestamp": "2025-06-16T16:46:53.498Z",
+      "systemMetrics": {
+        "cpuUsage": 19,
+        "memoryUsageMB": 2,
+        "recordCount": 1000
+      }
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:46:57.067Z",
+      "systemMetrics": {
+        "cpuUsage": "14.33",
+        "memoryUsageMB": 51,
+        "freeMemoryPercent": 46
+      },
+      "jsonSizeKb": 0
+    },
+    {
+      "name": "asdasdas",
+      "url": "http://localhost:8080/performance/fac-production-fetch",
+      "error": "",
+      "status": 0,
+      "timestamp": "2025-06-16T16:47:02.074Z",
+      "systemMetrics": {
+        "cpuUsage": "14.33",
+        "memoryUsageMB": 51,
+        "freeMemoryPercent": 48
+      },
+      "jsonSizeKb": 0
     }
-  ]
+  ],
+  "api2": []
 }
