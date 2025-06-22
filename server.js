@@ -16,6 +16,8 @@ let apiConfig = {
   api2: { name: '', url: '' }
 };
 
+let parallelRequests = 5; 
+
 async function makeApiRequests() {
   const currentResults = { api1: [], api2: [] };
 
@@ -23,70 +25,76 @@ async function makeApiRequests() {
     const api = apiConfig[apiKey];
     if (!api.url) continue;
 
-    try {
-      const start = Date.now();
-      let response;
-      let status = 0;
-
-      const beforeMetrics = getSystemMetrics();
-
-      const headers = {};
-      if (api.url.includes('localhost:8080')) {
-        headers['X-Schema'] = 'user1';
-      }
-
+    
+    const requests = Array.from({ length: parallelRequests }, async () => {
       try {
-        response = await axios.get(api.url, { headers });
-        status = response.status;
+        const start = Date.now();
+        let response;
+        let status = 0;
+
+        const beforeMetrics = getSystemMetrics();
+
+        const headers = {};
+        if (api.url.includes('localhost:8080')) {
+          headers['X-Schema'] = 'user1';
+        }
+
+        try {
+          response = await axios.get(api.url, { headers });
+          status = response.status;
+        } catch (err) {
+          if (err.response) {
+            status = err.response.status;
+          }
+          throw err;
+        }
+
+        const afterMetrics = getSystemMetrics();
+        const end = Date.now();
+        const duration = end - start;
+
+        return {
+          name: api.name,
+          url: api.url,
+          responseTimeMs: response.data?.durationMs || duration,
+          jsonSizeKb: response.data?.jsonSizeKb || 0,
+          status: status,
+          timestamp: new Date().toISOString(),
+          systemMetrics: {
+            cpuUsage: response.data?.cpuPercent || 0,
+            memoryUsageMB: Math.round((response.data?.memoryUsedKb || 0) / 1024),
+            recordCount: response.data?.recordCount || 0
+          }
+        };
       } catch (err) {
-        if (err.response) {
-          status = err.response.status;
-        }
-        throw err;
+        console.error(`Error fetching ${api.url}:`, err.message);
+
+        const errorMetrics = getSystemMetrics();
+        const cpuUsagePercent = ((errorMetrics.cpuUsage.total - errorMetrics.cpuUsage.idle) / errorMetrics.cpuUsage.total) * 100;
+
+        return {
+          name: api.name,
+          url: api.url,
+          error: err.message,
+          status: err.response ? err.response.status : 0,
+          timestamp: new Date().toISOString(),
+          systemMetrics: {
+            cpuUsage: cpuUsagePercent.toFixed(2),
+            memoryUsageMB: Math.round(errorMetrics.memoryUsage.rss / 1024 / 1024),
+            freeMemoryPercent: Math.round((errorMetrics.freeMemory / errorMetrics.totalMemory) * 100)
+          },
+          jsonSizeKb: 0
+        };
       }
+    });
 
-      const afterMetrics = getSystemMetrics();
-      const end = Date.now();
-      const duration = end - start;
-
-      
-      currentResults[apiKey].push({
-        name: api.name,
-        url: api.url,
-        responseTimeMs: response.data?.durationMs || duration,
-        jsonSizeKb: response.data?.jsonSizeKb || 0,
-        status: status,
-        timestamp: new Date().toISOString(),
-        systemMetrics: {
-          cpuUsage: response.data?.cpuPercent || 0,
-          memoryUsageMB: Math.round((response.data?.memoryUsedKb || 0) / 1024),
-          recordCount: response.data?.recordCount || 0
-        }
-      });
-    } catch (err) {
-      console.error(`Error fetching ${api.url}:`, err.message);
-
-      const errorMetrics = getSystemMetrics();
-      const cpuUsagePercent = ((errorMetrics.cpuUsage.total - errorMetrics.cpuUsage.idle) / errorMetrics.cpuUsage.total) * 100;
-      
-      currentResults[apiKey].push({
-        name: api.name,
-        url: api.url,
-        error: err.message,
-        status: err.response ? err.response.status : 0,
-        timestamp: new Date().toISOString(),
-        systemMetrics: {
-          cpuUsage: cpuUsagePercent.toFixed(2),
-          memoryUsageMB: Math.round(errorMetrics.memoryUsage.rss / 1024 / 1024),
-          freeMemoryPercent: Math.round((errorMetrics.freeMemory / errorMetrics.totalMemory) * 100)
-        },
-        jsonSizeKb: 0
-      });
-    }
+    
+    const results = await Promise.all(requests);
+    currentResults[apiKey].push(...results);
   }
 
   const allResults = readResultsFile();
-  
+
   for (const apiKey of ['api1', 'api2']) {
     allResults[apiKey].push(...currentResults[apiKey]);
     if (allResults[apiKey].length > 1000) {
@@ -213,6 +221,20 @@ app.get('/health', (req, res) => {
     }
   };
   res.json(healthData);
+});
+
+app.post('/parallel-requests', (req, res) => {
+  const { count } = req.body;
+  if (typeof count === 'number' && count > 0 && count < 100) {
+    parallelRequests = count;
+    res.json({ success: true, parallelRequests });
+  } else {
+    res.status(400).json({ success: false, error: 'Geçerli bir sayı giriniz (1-99 arası).' });
+  }
+});
+
+app.get('/parallel-requests', (req, res) => {
+  res.json({ parallelRequests });
 });
 
 const PORT = process.env.PORT || 3001;

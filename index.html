@@ -272,6 +272,13 @@
           <input type="text" id="api2-url" placeholder="Enter API 2 URL">
         </div>
       </div>
+      <div class="api-inputs">
+        <div class="api-input-group">
+          <label for="parallel-requests">Paralel İstek Sayısı</label>
+          <input type="number" id="parallel-requests" min="1" max="99" value="5">
+        </div>
+        <button id="save-parallel-requests" class="save-config-button">Kaydet</button>
+      </div>
       <button id="save-config" class="save-config-button">Save Configuration</button>
     </div>
     
@@ -794,6 +801,11 @@
       document.getElementById('reset').addEventListener('click', resetMetrics);
       
       setInterval(fetchData, 5000);
+      fetch('/parallel-requests')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('parallel-requests').value = data.parallelRequests;
+        });
     });
 
     async function resetMetrics() {
@@ -856,6 +868,24 @@
         document.getElementById('error-message').style.display = 'block';
       }
     }
+
+    document.getElementById('save-parallel-requests').addEventListener('click', () => {
+      const count = parseInt(document.getElementById('parallel-requests').value, 10);
+      fetch('/parallel-requests', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ count })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          alert('Paralel istek sayısı güncellendi: ' + data.parallelRequests);
+        } else {
+          alert('Hata: ' + data.error);
+        }
+      })
+      .catch(err => alert('Hata: ' + err.message));
+    });
   </script>
 </body>
 </html>
