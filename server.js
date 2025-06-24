@@ -225,11 +225,11 @@ app.get('/health', (req, res) => {
 
 app.post('/parallel-requests', (req, res) => {
   const { count } = req.body;
-  if (typeof count === 'number' && count > 0 && count < 100) {
+  if (typeof count === 'number' && count > 0 && count < 500) {
     parallelRequests = count;
     res.json({ success: true, parallelRequests });
   } else {
-    res.status(400).json({ success: false, error: 'Geçerli bir sayı giriniz (1-99 arası).' });
+    res.status(400).json({ success: false, error: 'Geçerli bir sayı giriniz (1-499 arası).' });
   }
 });
 

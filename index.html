@@ -639,16 +639,16 @@
       document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
       document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
 
-      // Set uptime start time for real-time counter
+      
       if (data.uptime && data.uptime !== '--' && !uptimeStartTimes[`api${apiNumber}`]) {
         const uptimeMatch = data.uptime.match(/(\d+)s|(\d+)m\s*(\d+)s|(\d+)h\s*(\d+)m\s*(\d+)s|(\d+)d\s*(\d+)h\s*(\d+)m/);
         if (uptimeMatch) {
           let totalSeconds = 0;
-          if (uptimeMatch[1]) { // just seconds
+          if (uptimeMatch[1]) { 
             totalSeconds = parseInt(uptimeMatch[1]);
-          } else if (uptimeMatch[2] && uptimeMatch[3]) { // minutes and seconds
+          } else if (uptimeMatch[2] && uptimeMatch[3]) { 
             totalSeconds = parseInt(uptimeMatch[2]) * 60 + parseInt(uptimeMatch[3]);
-          } else if (uptimeMatch[4] && uptimeMatch[5] && uptimeMatch[6]) { // hours, minutes, seconds
+          } else if (uptimeMatch[4] && uptimeMatch[5] && uptimeMatch[6]) {
             totalSeconds = parseInt(uptimeMatch[4]) * 3600 + parseInt(uptimeMatch[5]) * 60 + parseInt(uptimeMatch[6]);
           }
           
@@ -725,11 +725,11 @@
     }
 
     function startUptimeCounters() {
-      // Clear existing intervals
+      
       if (uptimeIntervals.api1) clearInterval(uptimeIntervals.api1);
       if (uptimeIntervals.api2) clearInterval(uptimeIntervals.api2);
 
-      // Start API 1 uptime counter
+      
       if (uptimeStartTimes.api1) {
         uptimeIntervals.api1 = setInterval(() => {
           const now = new Date();
@@ -739,7 +739,7 @@
         }, 1000);
       }
 
-      // Start API 2 uptime counter
+      
       if (uptimeStartTimes.api2) {
         uptimeIntervals.api2 = setInterval(() => {
           const now = new Date();
@@ -774,7 +774,7 @@
       .then(response => response.json())
       .then(data => {
         if (data.success) {
-          // Reset uptime counters for new configuration
+          
           uptimeStartTimes.api1 = new Date();
           uptimeStartTimes.api2 = api2Url ? new Date() : null;
           
@@ -819,7 +819,7 @@
           throw new Error('Failed to reset results file');
         }
 
-        // Clear uptime counters
+        
         if (uptimeIntervals.api1) clearInterval(uptimeIntervals.api1);
         if (uptimeIntervals.api2) clearInterval(uptimeIntervals.api2);
         uptimeStartTimes.api1 = null;
