@@ -17,6 +17,8 @@ let apiConfig = {
 };
 
 let parallelRequests = 5; 
+let requestIntervalMs = 5000; 
+let intervalId = setInterval(makeApiRequests, requestIntervalMs);
 
 async function makeApiRequests() {
   const currentResults = { api1: [], api2: [] };
@@ -235,6 +237,30 @@ app.post('/parallel-requests', (req, res) => {
 
 app.get('/parallel-requests', (req, res) => {
   res.json({ parallelRequests });
+});
+
+app.post('/request-interval', (req, res) => {
+  const { intervalMs } = req.body;
+  if (typeof intervalMs === 'number' && intervalMs >= 100 && intervalMs <= 60000) {
+    requestIntervalMs = intervalMs;
+    clearInterval(intervalId);
+    intervalId = setInterval(makeApiRequests, requestIntervalMs);
+    res.json({ success: true, requestIntervalMs });
+  } else {
+    res.status(400).json({ success: false, error: 'Geçerli bir aralık giriniz (1000-60000 ms).' });
+  }
+});
+
+app.get('/request-interval', (req, res) => {
+  res.json({ requestIntervalMs });
+});
+
+app.post('/reset-config', (req, res) => {
+  apiConfig = {
+    api1: { name: '', url: '' },
+    api2: { name: '', url: '' }
+  };
+  res.json({ success: true, message: 'API configuration has been reset.' });
 });
 
 const PORT = process.env.PORT || 3001;

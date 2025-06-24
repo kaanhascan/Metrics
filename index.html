@@ -279,7 +279,13 @@
         </div>
         <button id="save-parallel-requests" class="save-config-button">Kaydet</button>
       </div>
+      <div class="api-input-group">
+        <label for="request-interval">Request Aralığı (ms)</label>
+        <input type="number" id="request-interval" min="1000" max="60000" value="5000">
+      </div>
+      <button id="save-request-interval" class="save-config-button">Kaydet</button>
       <button id="save-config" class="save-config-button">Save Configuration</button>
+      <button id="reset-apis" class="reset-button" style="margin-left:10px;">API'leri Sıfırla</button>
     </div>
     
     <div class="button-container">
@@ -327,6 +333,11 @@
             <div class="value" id="api1-uptime">--</div>
             <div class="change">Since start</div>
           </div>
+          <div class="metric-card">
+            <h3>Throughput</h3>
+            <div class="value" id="api1-throughput">-- RPS</div>
+            <div class="change">Last minute</div>
+          </div>
         </div>
         <div class="chart-container">
           <h2 id="api1-chart-title">Response Time Trend</h2>
@@ -373,6 +384,11 @@
             <h3>Uptime</h3>
             <div class="value" id="api2-uptime">--</div>
             <div class="change">Since start</div>
+          </div>
+          <div class="metric-card">
+            <h3>Throughput</h3>
+            <div class="value" id="api2-throughput">-- RPS</div>
+            <div class="change">Last minute</div>
           </div>
         </div>
         <div class="chart-container">
@@ -638,6 +654,7 @@
       document.getElementById(`${prefix}-cpu-usage`).textContent = `${data.systemMetrics.cpuUsage}%`;
       document.getElementById(`${prefix}-memory-usage`).textContent = `${data.systemMetrics.memoryUsageMB} MB`;
       document.getElementById(`${prefix}-response-size`).textContent = `${data.systemMetrics.sizeKB || '--'} KB`;
+      document.getElementById(`${prefix}-throughput`).textContent = `${data.throughputRPS} RPS`;
 
       
       if (data.uptime && data.uptime !== '--' && !uptimeStartTimes[`api${apiNumber}`]) {
@@ -691,7 +708,8 @@
           totalRequests: data.api1Metrics.totalRequests,
           timestamps: data.api1Metrics.timestamps,
           responseTimes: data.api1Metrics.responseTimes,
-          systemMetrics: data.api1Metrics.systemMetrics
+          systemMetrics: data.api1Metrics.systemMetrics,
+          throughputRPS: data.api1Metrics.throughputRPS
         });
 
         if (data.api2Metrics) {
@@ -701,7 +719,8 @@
             totalRequests: data.api2Metrics.totalRequests,
             timestamps: data.api2Metrics.timestamps,
             responseTimes: data.api2Metrics.responseTimes,
-            systemMetrics: data.api2Metrics.systemMetrics
+            systemMetrics: data.api2Metrics.systemMetrics,
+            throughputRPS: data.api2Metrics.throughputRPS
           });
         }
 
@@ -885,6 +904,51 @@
         }
       })
       .catch(err => alert('Hata: ' + err.message));
+    });
+
+    document.getElementById('save-request-interval').addEventListener('click', () => {
+      const intervalMs = parseInt(document.getElementById('request-interval').value, 10);
+      fetch('/request-interval', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ intervalMs })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          alert('Request aralığı güncellendi: ' + data.requestIntervalMs + ' ms');
+        } else {
+          alert('Hata: ' + data.error);
+        }
+      })
+      .catch(err => alert('Hata: ' + err.message));
+    });
+
+    // Sayfa yüklenince mevcut değeri çek:
+    fetch('/request-interval')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('request-interval').value = data.requestIntervalMs;
+      });
+
+    document.getElementById('reset-apis').addEventListener('click', async () => {
+      if (!confirm('API isim ve URL bilgileri sıfırlanacak. Emin misiniz?')) return;
+      try {
+        const res = await fetch('/reset-config', { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          document.getElementById('api1-name').value = '';
+          document.getElementById('api1-url').value = '';
+          document.getElementById('api2-name').value = '';
+          document.getElementById('api2-url').value = '';
+          alert('API yapılandırması sıfırlandı!');
+          updateApiNames('API 1', 'API 2');
+        } else {
+          alert('Sıfırlama başarısız: ' + (data.error || 'Bilinmeyen hata'));
+        }
+      } catch (err) {
+        alert('Sıfırlama sırasında hata: ' + err.message);
+      }
     });
   </script>
 </body>

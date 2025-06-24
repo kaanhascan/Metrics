@@ -70,6 +70,16 @@ function calculateMetrics(data, apiKey) {
     ? Math.round(responseTimes.reduce((a, b) => a + b, 0) / responseTimes.length) 
     : 0;
 
+  const now = Date.now();
+  const oneMinuteAgo = now - 60 * 1000;
+
+  
+  const recentSuccesses = data[apiKey].filter(
+    r => r.status === 200 && new Date(r.timestamp).getTime() >= oneMinuteAgo
+  );
+
+  const throughputRPS = recentSuccesses.length / 60;
+
   return {
     successRate,
     avgResponseTime,
@@ -79,7 +89,8 @@ function calculateMetrics(data, apiKey) {
     systemMetrics: {
       ...latestData.systemMetrics,
       sizeKB: latestData.jsonSizeKb || 0
-    }
+    },
+    throughputRPS: throughputRPS.toFixed(2)
   };
 }
 
